@@ -27,5 +27,9 @@ export class DiretorService {
  getDiretorById(matricula: number) : Observable<Diretor>{
   return this.http.get<any>(`http://localhost:8081/professors/${matricula}`);
  }
+
+ deletar(diretor: Diretor): Observable<any>{
+  return this.http.delete<any>(`http://localhost:8081/professors/${diretor.matricula}`);
+ }
  
 }

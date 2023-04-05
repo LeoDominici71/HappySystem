@@ -12,6 +12,8 @@ export class DiretorListaComponent {
 
   diretors: Diretor[] = [];
   diretorSelecionado: Diretor;
+  mensagemSucesso: string;
+  mensagemErro: string;
 
   constructor(private service: DiretorService, private router: Router) {
   }
@@ -27,6 +29,16 @@ export class DiretorListaComponent {
 
   preparaDelecao(diretor: Diretor){
     this.diretorSelecionado = diretor; 
+  }
+
+  deletarDiretor(){
+    this.service
+    .deletar(this.diretorSelecionado)
+    .subscribe( response => {
+      this.mensagemSucesso = 'Professor(a) deletado(a) com sucesso!'
+      this.ngOnInit();
+    },
+                erro => this.mensagemErro = 'Ocorreu um erro ao deletar o Professor')
   }
 
 
