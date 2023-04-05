@@ -1,0 +1,61 @@
+<h1 class="mt-4" style="color: #183356;">Students</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active" style="color: #183356;">Register</li>
+</ol>
+<div class="container">
+    <form #studentForm="ngForm" (ngSubmit)="OnSubmit()">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success" role="alert" *ngIf="sucess == true">
+                    Student saved/updated with success
+
+                </div>
+                <div class="alert alert-danger" role="alert" *ngFor="let erro of error">
+                    {{ erro }}
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Matricula:</label>
+                    <input type="text" class="form-control"[ngModel]="student.matricula" name="matricula" disabled="true" />
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>CPF: *</label>
+                    <input type="text"  [(ngModel)]="student.cpf" name="cpf"class="form-control" />
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Nome: *</label>
+                    <input type="text"  [(ngModel)]="student.nome" name="nome" class="form-control" />
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa fa-save"></i> Salvar
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-danger" (click)="voltarParaListagem()">
+                    <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

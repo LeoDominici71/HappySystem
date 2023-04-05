@@ -1,0 +1,42 @@
+<h1 class="mt-4" style="color: #183356;">Courses</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active" style="color: #183356;">Search</li>
+</ol>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-warning" (click)="novoCadastro()" >
+                <i class="fa fa-plus"></i> Novo
+            </button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Descricao</th>
+                        <th>Professor</th>
+                        <th></th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let curso of cursos">
+                        <td>{{ curso.id }}</td>
+                        <td>{{ curso.nome }}</td>
+                        <td>{{ curso.descricao }}</td>
+                        <td>{{ curso.professorId }}</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+

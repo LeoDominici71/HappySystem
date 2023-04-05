@@ -1,0 +1,56 @@
+<h1 class="mt-4" style="color: #183356;">Grades</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active" style="color: #183356;">Register</li>
+</ol>
+<div class="container">
+    <form #gradesForm="ngForm" (ngSubmit)="OnSubmit()">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success" role="alert" *ngIf="sucess == true">
+                    Grades saved/updated with success
+
+                </div>
+                <div class="alert alert-danger" role="alert" *ngFor="let erro of error">
+                    {{ erro }}
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Student: *</label>
+                    <input type="text" [(ngModel)]="grade.studentId" name="studentId" class="form-control" />
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Curse: *</label>
+                    <input type="text" [(ngModel)]="grade.courseId" name="cursoId" class="form-control" />
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Grade: *</label>
+                    <input type="text" [(ngModel)]="grade.grades" name="grades" class="form-control" />
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa fa-save"></i> Salvar
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

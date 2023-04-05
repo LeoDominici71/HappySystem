@@ -1,0 +1,69 @@
+<h1 class="mt-4" style="color: #183356;">Professors</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active" style="color: #183356;">Search</li>
+</ol>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-warning" (click)="novoCadastro()">
+                <i class="fa fa-plus"></i> Novo
+            </button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Especialidade</th>
+                        <th></th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let diretor of diretors">
+                        <td>{{ diretor.matricula }}</td>
+                        <td>{{ diretor.nome }}</td>
+                        <td>{{ diretor.cpf }}</td>
+                        <td>{{ diretor.especialidade }}</td>
+                        <td>
+                            <button class="btn btn-primary" routerLink="/diretor-form/{{ diretor.matricula }}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+
+                            <button class="btn btn-danger" (click)="preparaDelecao(diretor)" data-toggle="modal" 
+                            data-target="#modalDelecao">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div id="modalDelecao" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Confirmaçao</h4>
+
+                </div>
+                <div class="modal-body" *ngIf="diretorSelecionado">
+                    Confirma a deleçao do cliente {{ diretorSelecionado.nome }}?
+
+                </div>
+                <div class="modal-footer">
+                    <button>Confirma</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
