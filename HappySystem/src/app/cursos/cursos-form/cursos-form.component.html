@@ -3,11 +3,11 @@
     <li class="breadcrumb-item active" style="color: #183356;">Register</li>
 </ol>
 <div class="container">
-    <form #cursosForm="ngForm" (ngSubmit)="OnSubmit()">
+    <form #Form="ngForm" (submit)="OnSubmit()">
         <div class="row">
             <div class="col-md-12">
                 <div class="alert alert-success" role="alert" *ngIf="sucess == true">
-                    Curso saved/updated with success
+                    Course saved with success
 
                 </div>
                 <div class="alert alert-danger" role="alert" *ngFor="let erro of error">
@@ -18,51 +18,60 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="form-group">
-                    <label>Id:</label>
-                    <input type="text" [ngModel]="curso.id" name="id" class="form-control" disabled="true"/>
+
+                    <label>Descriçao do Curso</label>
+                    <input class="form-control" [(ngModel)]="curso.descricao" type="text" name="descricao"
+                        id="inputDescricao">
+
+
 
                 </div>
             </div>
-
-            <div class="col-md-6">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="form-group">
-                    <label>Professor: *</label>
-                    <input type="text" [(ngModel)]="curso.professorId" name="professorId" class="form-control"/>
-
+                    <label>Nome do Curso</label>
+                    <input class="form-control" [(ngModel)]="curso.nome" type="text" name="nome" id="inputNome">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Nome: *</label>
-                    <input type="text" [(ngModel)]="curso.nome" name="nome" class="form-control"/>
+                    <label>Professor ID:</label>
+                    <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="curso.professorId">
+                        <option value="">Selecione ... </option>
+                        <option *ngFor="let diretors of diretor" [ngValue]="diretors.matricula">
+                            {{ diretors.nome }}
+                        </option>
+
+                    </select>
 
                 </div>
             </div>
+
+
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Descricao: *</label>
-                    <input type="text" [(ngModel)]="curso.descricao" name="descricao" class="form-control"/>
-
+                    <label>Curso ID</label>
+                    <input class="form-control" [ngModel]="curso.id" type="text" name="id"  disabled="true">
                 </div>
             </div>
         </div>
+
+
+
+
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <button type="submit" class="btn btn-success">
-                    <i class="fa fa-save"></i> Salvar
-                </button>
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-danger" (click)="voltarParaListagem()">
-                    <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+                    Salvar
                 </button>
             </div>
         </div>
     </form>
 
 </div>
-

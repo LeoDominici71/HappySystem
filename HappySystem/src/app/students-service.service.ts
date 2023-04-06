@@ -16,7 +16,19 @@ export class StudentsServiceService {
     return this.http.post<Student>('http://localhost:8081/students',student);
    }
 
+   atualizar(student: Student) : Observable<any> {
+    return this.http.put<Student>(`http://localhost:8081/students/${student.matricula}`,student);
+   }
+
    getStudents(): Observable<Student[]> {
     return this.http.get<Student[]>('http://localhost:8081/students');
+ }
+
+ getStudentById(matricula: number) : Observable<Student>{
+  return this.http.get<any>(`http://localhost:8081/students/${matricula}`);
+ }
+
+ deletar(student: Student): Observable<any>{
+  return this.http.delete<any>(`http://localhost:8081/students/${student.matricula}`);
  }
 }

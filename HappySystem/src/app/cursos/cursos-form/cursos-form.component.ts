@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Curso } from '../curso';
 import { CursoService } from '../../curso.service'
+import { Diretor } from 'src/app/diretor/diretor';
+import { DiretorService } from '../../diretor.service'
 
 @Component({
   selector: 'app-cursos-form',
@@ -10,36 +12,38 @@ import { CursoService } from '../../curso.service'
 })
 export class CursosFormComponent {
 
+  diretor: Diretor[] = []
   curso: Curso;
+
   sucess: boolean = false;
   error: String[];
 
-  constructor(private cursoService: CursoService, private router: Router) {
+  constructor(private diretorService: DiretorService,
+    private cursoService: CursoService) {
     this.curso = new Curso();
-    this.error = [];
+
+  }
+
+
+  ngOnInit(): void {
+    this.diretorService.getDiretor().subscribe(response => this.diretor = response);
+  }
+
+  OnSubmit() {
+    this.cursoService
+      .salvar(this.curso)
+      .subscribe(response => {
+        this.sucess = true;
+        this.error = [];
+        this.curso = new Curso;
+      }, errorResponse => {
+        this.sucess = false;
+        this.error = [errorResponse.error.error];
+      })
   }
 
 
-  ngOnInit(): void{}
 
-  voltarParaListagem(){
-   this.router.navigate(['/cursos-lista'])
-  }
-
-
-OnSubmit() {
-  this.cursoService.salvar(this.curso).subscribe(response => {
-    this.sucess = true;
-    this.error = [];
-    this.curso = response;
-  }, errorResponse => {
-    this.sucess = false;
-    this.error = [errorResponse.error.error];
-
-
-
-  }
-  )
 }
 
-}
+

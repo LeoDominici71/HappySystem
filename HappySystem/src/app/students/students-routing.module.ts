@@ -5,6 +5,7 @@ import { StudentsListaComponent } from './students-lista/students-lista.componen
 
 const routes: Routes = [
   { path: 'students-form' , component: StudentsFormComponent },
+  { path: 'students-form/:matricula' , component: StudentsFormComponent },
   { path: 'students-lista' , component: StudentsListaComponent}
 ];
 

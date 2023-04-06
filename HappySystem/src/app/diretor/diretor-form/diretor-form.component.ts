@@ -49,7 +49,7 @@ export class DiretorFormComponent {
         this.sucess = true;
         this.error = [];
       }, errorResponse => {
-        this.error = ['erro ao atualizar o cliente']
+        this.error = ['erro ao atualizar o professor']
       })
 
     }else{

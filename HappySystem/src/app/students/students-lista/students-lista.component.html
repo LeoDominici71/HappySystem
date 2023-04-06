@@ -28,12 +28,41 @@
                         <td>{{ student.matricula }}</td>
                         <td>{{ student.nome }}</td>
                         <td>{{ student.cpf }}</td>
-                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" routerLink="/students-form/{{ student.matricula }}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+
+                            <button class="btn btn-danger" (click)="preparaDelecao(student)" data-toggle="modal"
+                                data-target="#modalDelecao">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
                     </tr>
 
                 </tbody>
             </table>
 
         </div>
+    </div>
+    <div id="modalDelecao" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Confirmaçao</h4>
+
+                </div>
+                <div class="modal-body" *ngIf="studentSelecionado">
+                    Confirma a deleçao do(a) estudante {{ studentSelecionado.nome }}?
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" (click)="deletarStudent()" data-dismiss="modal">Confirmar</button>
+                    <button class="btn btn-default" data-dismiss="modal">Cancelar</button>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
