@@ -26,7 +26,6 @@ export class DiretorService {
    getDiretor(): Observable<Diretor[]> {
     return this.http.get<Diretor[]>(`${this.apiURL}`);
  }
-
  getDiretorById(matricula: number) : Observable<Diretor>{
   return this.http.get<any>(`${this.apiURL}/${matricula}`);
  }

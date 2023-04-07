@@ -10,6 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "tb_curso")
 public class Curso {
@@ -74,6 +76,7 @@ public class Curso {
 		this.descricao = descricao;
 	}
 
+	
 	public Professor getProfessor() {
 		return professor;
 	}

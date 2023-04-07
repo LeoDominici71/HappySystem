@@ -46,7 +46,6 @@ INDEX VERSION 1.131+C:\Users\leona\OneDrive\Área de Trabalho\Happy System\.metad
 1701312087.index
 3074841869.index
 2078697999.index
-664185954.index
 3987114239.index
 4149431868.index
 759280633.index
@@ -63,6 +62,7 @@ INDEX VERSION 1.131+C:\Users\leona\OneDrive\Área de Trabalho\Happy System\.metad
 3602037195.index
 927206106.index
 494807116.index
+539862980.index
 962131876.index
 3566737905.index
 170535091.index
@@ -73,7 +73,6 @@ INDEX VERSION 1.131+C:\Users\leona\OneDrive\Área de Trabalho\Happy System\.metad
 168305781.index
 2023194760.index
 2685828474.index
-1833545428.index
 874670611.index
 2180271795.index
 106270268.index

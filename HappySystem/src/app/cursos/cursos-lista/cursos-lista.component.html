@@ -19,24 +19,53 @@
                         <th>Id</th>
                         <th>Nome</th>
                         <th>Descricao</th>
-                        <th>Professor</th>
                         <th></th>
                     </tr>
 
                 </thead>
                 <tbody>
-                    <tr *ngFor="let curso of cursos">
+                    <tr *ngFor="let curso of cursos" >
                         <td>{{ curso.id }}</td>
                         <td>{{ curso.nome }}</td>
                         <td>{{ curso.descricao }}</td>
-                        <td>{{ curso.professorId }}</td>
-                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" routerLink="/cursos-form/{{ curso.id }}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+
+                            <button class="btn btn-danger" (click)="preparaDelecao(curso)" data-toggle="modal"
+                                data-target="#modalDelecao">
+                                <i class="fa fa-trash"></i>
+                            </button>
+
+
+                        </td>
                     </tr>
 
                 </tbody>
             </table>
 
         </div>
+    </div>
+    <div id="modalDelecao" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Confirmaçao</h4>
+
+                </div>
+                <div class="modal-body" *ngIf="cursoSelecionado">
+                    Confirma a deleçao do curso {{ cursoSelecionado.nome }}?
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" (click)="deletarCurso()" data-dismiss="modal">Confirmar</button>
+                    <button class="btn btn-default" data-dismiss="modal">Cancelar</button>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

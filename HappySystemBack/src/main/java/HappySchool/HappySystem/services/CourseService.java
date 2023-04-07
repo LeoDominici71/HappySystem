@@ -41,7 +41,11 @@ public class CourseService {
 	}
 
 	public Curso insert(CursoDTO dto) {
-		try {
+		  try {
+		        // Check for null fields
+		        if (dto.getNome() == null || dto.getDescricao() == null || dto.getProfessorId() == null) {
+		            throw new DataExceptions("One or more fields are null");
+		        }
 			Long idProfessor = dto.getProfessorId();
 			Professor professor = Profrepository.findById(idProfessor)
 					.orElseThrow(() -> new EntityNotFoundExceptions("Professor doesn't exist"));
@@ -51,8 +55,8 @@ public class CourseService {
 			curso.setProfessor(professor);
 
 			return repository.save(curso);
-		} catch (DataIntegrityViolationException e) {
-			throw new DataExceptions("There are Null fields");
+		} catch (DataExceptions e) {
+			throw e;
 		}
 
 	}
