@@ -42,8 +42,11 @@ export class CursosListaComponent {
   deletarCurso(){
     this.service
     .deletar(this.cursoSelecionado)
-    .subscribe( response => this.mensagemSucesso = 'Curso deletado com sucesso',
-    erro => this.mensagemErro = 'Ocorreu um erro ao deleter o cliente')
+    .subscribe( response => {this.mensagemSucesso = 'Curso deletado com sucesso'
+    this.ngOnInit();
+  },
+    erro => this.mensagemErro = 'Ocorreu um erro ao deleter o cliente'
+    )
   }
 
 

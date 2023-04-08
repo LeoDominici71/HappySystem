@@ -18,6 +18,7 @@ export class CursosProfComponent {
   diretor: Diretor[] = []
   curso: Curso;
   lista: cursoProfBusca[];
+  message: string | null = null;
 
   constructor(private diretorService: DiretorService,
     private cursoService: CursoService,
@@ -33,7 +34,14 @@ export class CursosProfComponent {
 
   consultar(){
 this.cursoService.getNome(this.nome)
-.subscribe(response => this.lista = response);
+.subscribe(response => {this.lista = response;
+if(this.lista.length <= 0){
+this.message = "Nenhum registro encontrado.";
+}else{
+  this.message = null;
+}
+
+});
   }
 
 }
