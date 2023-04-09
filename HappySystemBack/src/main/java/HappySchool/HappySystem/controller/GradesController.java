@@ -15,11 +15,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import HappySchool.HappySystem.entity.Grades;
 import HappySchool.HappySystem.entity.dto.GradesDTO;
+import HappySchool.HappySystem.repository.GradesRepository;
 import HappySchool.HappySystem.services.GradesService;
 
 @RestController
@@ -29,12 +31,21 @@ public class GradesController {
 
 	@Autowired
 	private GradesService service;
+	
+	@Autowired
+	private GradesRepository repository;
+	
 
-	@GetMapping
+	@GetMapping("/all")
 	public ResponseEntity<List<Grades>> findAll() {
 		List<Grades> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
+	
+	@GetMapping
+    public List<Grades> getGradesByStudentAndCourse( @RequestParam( value = "studentNome", required = false, defaultValue = "") String StudentNome, @RequestParam( value = "cursoNome", required = false, defaultValue = "") String CursoNome) {
+        return repository.findByStudentNameAndCourseName("%" + StudentNome+ "%" ,"%" + CursoNome + "%");
+    }
 
 	@GetMapping(value = "/student/{studentId}/curso/{courseId}")
 	public ResponseEntity<Grades> findById(@PathVariable Long studentId, @PathVariable Integer courseId) {

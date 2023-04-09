@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { GradesRoutingModule } from './grades-routing.module';
 import { GradesFormComponent } from './grades-form/grades-form.component';
+import { GradesListaComponent } from './grades-lista/grades-lista.component';
 
 
 @NgModule({
   declarations: [
-    GradesFormComponent
+    GradesFormComponent,
+    GradesListaComponent
   ],
   imports: [
     CommonModule,

@@ -200,3 +200,73 @@
 2023-04-07 10:54:34,421 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-04-07 10:54:34,421 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-04-07 10:54:34,421 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:23:22,540 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:23:22,541 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:23:22,546 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:23:22,988 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:23:23,010 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:23:23,014 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:23:23,016 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:33:26,444 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:33:26,444 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:33:26,448 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:33:26,490 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:33:26,513 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:33:26,513 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:33:26,514 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:33:31,553 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:33:31,553 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:33:31,572 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:33:31,594 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:33:31,603 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:33:31,603 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:33:31,603 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:34:55,793 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:34:55,794 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:34:55,797 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:34:55,822 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:34:55,829 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:34:55,830 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:34:55,830 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:35:16,708 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:35:16,708 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:35:16,712 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:35:16,751 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:35:16,762 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:35:16,762 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:35:16,763 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:36:01,166 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:36:01,166 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:36:01,169 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:36:01,240 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:36:01,253 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:36:01,253 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:36:01,253 [Worker-210: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 09:41:14,004 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:41:14,005 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:41:14,008 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 09:41:14,057 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 09:41:14,067 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 09:41:14,067 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 09:41:14,067 [Worker-217: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 12:44:27,319 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 12:44:27,322 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 12:44:27,326 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 12:44:27,507 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 12:44:27,516 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 12:44:27,516 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 12:44:27,516 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 13:14:53,783 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 13:14:53,784 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 13:14:53,787 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 13:14:53,857 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 13:14:53,865 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 13:14:53,865 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 13:14:53,865 [Worker-245: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources
+2023-04-09 13:23:41,034 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 13:23:41,034 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 13:23:41,037 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-09 13:23:41,131 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-04-09 13:23:41,140 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-09 13:23:41,140 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-09 13:23:41,140 [Worker-246: Launching HappySystemBack - HappySystemApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\leona\OneDrive\햞ea de Trabalho\Happy System\HappySystemBack\src\test\resources

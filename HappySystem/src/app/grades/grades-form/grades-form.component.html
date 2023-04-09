@@ -8,29 +8,33 @@
             <div class="col-md-12">
                 <div class="alert alert-success" role="alert" *ngIf="sucess == true">
                     Grades saved/updated with success
-
                 </div>
                 <div class="alert alert-danger" role="alert" *ngFor="let erro of error">
                     {{ erro }}
-
                 </div>
-
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Student: *</label>
-                    <input type="text" [(ngModel)]="grade.studentId" name="studentId" class="form-control" />
-
+                    <label>Nome do Estudante:</label>
+                    <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="grade.studentId">
+                        <option value="">Selecione ... </option>
+                        <option *ngFor="let student of students" [ngValue]="student.matricula">
+                            {{ student.studentNome }}
+                        </option>
+                    </select>
                 </div>
             </div>
-
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Curse: *</label>
-                    <input type="text" [(ngModel)]="grade.courseId" name="cursoId" class="form-control" />
-
+                    <label>Curso ID:</label>
+                    <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="grade.cursoId">
+                        <option value="">Selecione ... </option>
+                        <option *ngFor="let cursos of curso" [ngValue]="cursos.id">
+                            {{ cursos.cursoNome }}
+                        </option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -39,10 +43,8 @@
                 <div class="form-group">
                     <label>Grade: *</label>
                     <input type="text" [(ngModel)]="grade.grades" name="grades" class="form-control" />
-
                 </div>
             </div>
-
         </div>
         <div class="row">
             <div class="col-md-2">
@@ -52,5 +54,4 @@
             </div>
         </div>
     </form>
-
 </div>

@@ -2,7 +2,7 @@ import { Diretor } from "../diretor/diretor";
 
 export class Curso{
 id?: number;
-nome?: string;
+cursoNome: string;
 descricao?: string;
 professorId?: Diretor;
 }
