@@ -21,7 +21,7 @@
                     <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="grade.studentId">
                         <option value="">Selecione ... </option>
                         <option *ngFor="let student of students" [ngValue]="student.matricula">
-                            {{ student.studentNome }}
+                            {{ student.nome }}
                         </option>
                     </select>
                 </div>
@@ -32,7 +32,7 @@
                     <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="grade.cursoId">
                         <option value="">Selecione ... </option>
                         <option *ngFor="let cursos of curso" [ngValue]="cursos.id">
-                            {{ cursos.cursoNome }}
+                            {{ cursos.nome }}
                         </option>
                     </select>
                 </div>

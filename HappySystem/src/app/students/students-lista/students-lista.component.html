@@ -26,7 +26,7 @@
                 <tbody>
                     <tr *ngFor="let student of students">
                         <td>{{ student.matricula }}</td>
-                        <td>{{ student.studentNome }}</td>
+                        <td>{{ student.nome }}</td>
                         <td>{{ student.cpf }}</td>
                         <td>
                             <button class="btn btn-primary" routerLink="/students-form/{{ student.matricula }}">
@@ -53,7 +53,7 @@
 
                 </div>
                 <div class="modal-body" *ngIf="studentSelecionado">
-                    Confirma a deleçao do(a) estudante {{ studentSelecionado.studentNome }}?
+                    Confirma a deleçao do(a) estudante {{ studentSelecionado.nome }}?
 
                 </div>
                 <div class="modal-footer">
