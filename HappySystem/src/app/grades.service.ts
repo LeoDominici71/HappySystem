@@ -17,13 +17,21 @@ export class GradesService {
   }
 
   salvar(grade: Grade) : Observable<Grade> {
-    return this.http.post<Grade>(this.apiURL,grade);
+    return this.http.post<Grade>(this.apiURL , grade);
    }
+
+   getGrade(): Observable<Grade[]> {
+    return this.http.get<Grade[]>(`${this.apiURL}/all`);
+ }
 
    getCursoStudent(studentNome: string, cursoNome: string): Observable<gradesLista[]>{
     const httpParams = new HttpParams().set("studentNome", studentNome ? studentNome.toString(): '').set("cursoNome", cursoNome ? cursoNome.toString(): '');
     const url = this.apiURL + "?" + httpParams.toString();
     return this.http.get<gradesLista[]>(url);
+   }
+
+   deletar(studentId: number, courseId: number): Observable<any>{
+    return this.http.delete<any>(`${this.apiURL}/student/${studentId}/curso/${courseId}`);
    }
 
    

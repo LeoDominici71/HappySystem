@@ -1,5 +1,5 @@
 export class Student{
     matricula?: number;
-    nome: string;
+    nome?: string;
     cpf?: string;
 }

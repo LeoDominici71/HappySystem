@@ -36,7 +36,7 @@ public class GradesController {
 	private GradesRepository repository;
 	
 
-	@GetMapping("/all")
+	@GetMapping(value = "/all")
 	public ResponseEntity<List<Grades>> findAll() {
 		List<Grades> list = service.findAll();
 		return ResponseEntity.ok().body(list);

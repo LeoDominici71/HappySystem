@@ -28,11 +28,11 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Curso ID:</label>
-                    <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="grade.cursoId">
+                    <label>Curso Nome:</label>
+                    <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="grade.courseId">
                         <option value="">Selecione ... </option>
                         <option *ngFor="let cursos of curso" [ngValue]="cursos.id">
-                            {{ cursos.nome }}
+                            {{ cursos.nome}}
                         </option>
                     </select>
                 </div>
@@ -47,9 +47,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <button type="submit" class="btn btn-success">
                     <i class="fa fa-save"></i> Salvar
+                </button>
+        
+                <button type="button" routerLink="/grades-diretor" class="btn btn-warning" style="margin-left: 10px;">
+                    <i class="fa fa-plus"></i> Consultar
                 </button>
             </div>
         </div>

@@ -26,12 +26,12 @@ export class GradesListaComponent {
 
   consultar() {
     this.service.getCursoStudent(this.studentNome, this.cursoNome).subscribe(response =>{ this.Lista = response;
-    if(this.Lista.length <= 0){
-this.message = "Nenhum registro encontrado.";
-    }else{
-      this.message = null;
-    }
-  });
+      if(this.Lista.length <= 0){
+  this.message = "Nenhum registro encontrado.";
+      }else{
+        this.message = null;
+      }
+    });
   }
 }
 

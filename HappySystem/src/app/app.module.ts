@@ -14,6 +14,7 @@ import { GradesModule } from './grades/grades.module';
 import { DiretorService } from './diretor.service'
 import { StudentsServiceService } from './students-service.service';
 import { CursoService } from './curso.service';
+import { GradesService } from './grades.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CursoService } from './curso.service';
   providers: [
     DiretorService,
     StudentsServiceService,
-    CursoService
+    CursoService,
+    GradesService
   ],
   bootstrap: [AppComponent]
 })

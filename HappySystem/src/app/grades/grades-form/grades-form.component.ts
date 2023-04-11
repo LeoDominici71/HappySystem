@@ -13,17 +13,19 @@ import { CursoService } from 'src/app/curso.service';
 })
 export class GradesFormComponent {
 
-students: Student[]
-curso: Curso[];
+students: Student[] = []
+curso: Curso[] = []
 grade: Grade;
 sucess: boolean = false;
 error: String[];
+
 
 constructor(private gradesService: GradesService,
   private studentService: StudentsServiceService,
   private cursoService: CursoService) {
   this.grade = new Grade();
   this.error = [];
+
 }
   ngOnInit(): void{
 

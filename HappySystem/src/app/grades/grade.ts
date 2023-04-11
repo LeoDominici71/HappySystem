@@ -1,5 +1,5 @@
 export class Grade{
     studentId: number;
-    cursoId: number;
+    courseId: number;
     grades: number;
 }
