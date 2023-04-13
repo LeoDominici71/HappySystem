@@ -1,6 +1,6 @@
 <h1 class="mt-4" style="color: #183356;">Course</h1>
 <ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active" style="color: #183356;">{{ curso.id ? 'Ediçao' : 'Cadastro' }}</li>
+    <li class="breadcrumb-item active" style="color: #183356;">{{ curso.id ? 'Edit' : 'Register' }}</li>
 </ol>
 <div class="container">
     <form #Form="ngForm" (submit)="OnSubmit()">
@@ -21,7 +21,7 @@
             <div class="col-md-12">
                 <div class="form-group">
 
-                    <label>Descriçao do Curso</label>
+                    <label>Course Description</label>
                     <input class="form-control" [(ngModel)]="curso.descricao" type="text" name="descricao"
                         id="inputDescricao">
 
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label>Nome do Curso</label>
+                    <label>Course Name</label>
                     <input class="form-control" [(ngModel)]="curso.nome" type="text" name="nome" id="inputcursoNome">
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 <div class="form-group">
                     <label>Professor ID:</label>
                     <select class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="curso.professorId">
-                        <option value="">Selecione ... </option>
+                        <option value="">Select ... </option>
                         <option *ngFor="let diretors of diretor" [ngValue]="diretors.matricula">
                             {{ diretors.nome }}
                         </option>
@@ -56,7 +56,7 @@
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Curso ID</label>
+                    <label>Course ID</label>
                     <input class="form-control" [ngModel]="curso.id" type="text" name="id" disabled="true">
                 </div>
             </div>
@@ -68,18 +68,18 @@
         <div class="row">
             <div class="col-md-2">
                 <button type="submit" class="btn btn-success" *ngIf="!curso.id">
-                    <i class="fa fa-save"></i> Salvar
+                    <i class="fa fa-save"></i> Save
                 </button>
             </div>
 
             <div class="col-md-2">
                 <button type="submit" class="btn btn-primary" *ngIf="curso.id">
-                    <i class="fa fa-sync-alt"></i> Atualizar
+                    <i class="fa fa-sync-alt"></i> Update
                 </button>
             </div>
             <div class="col-md-2">
                 <button type="button" class="btn btn-danger" (click)="voltarParaListagem()">
-                    <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+                    <i class="fa fa-arrow-alt-circle-left"></i> Back
                 </button>
             </div>
         </div>

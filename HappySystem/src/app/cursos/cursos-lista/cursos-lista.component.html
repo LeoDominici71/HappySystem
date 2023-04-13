@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-2">
             <button class="btn btn-warning" (click)="novoCadastro()" >
-                <i class="fa fa-plus"></i> Novo
+                <i class="fa fa-plus"></i> New
             </button>
         </div>
     </div>
@@ -17,8 +17,8 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Nome</th>
-                        <th>Descricao</th>
+                        <th>Name</th>
+                        <th>Description</th>
                         <th></th>
                     </tr>
 
@@ -51,16 +51,16 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Confirmaçao</h4>
+                    <h4>Confirmation</h4>
 
                 </div>
                 <div class="modal-body" *ngIf="cursoSelecionado">
-                    Confirma a deleçao do curso {{ cursoSelecionado.nome }}?
+                    Do you confirm the deletion of the course {{ cursoSelecionado.nome }}?
 
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success" (click)="deletarCurso()" data-dismiss="modal">Confirmar</button>
-                    <button class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-success" (click)="deletarCurso()" data-dismiss="modal">Confirm</button>
+                    <button class="btn btn-default" data-dismiss="modal">Cancel</button>
 
                 </div>
             </div>

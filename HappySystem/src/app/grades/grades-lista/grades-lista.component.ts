@@ -27,7 +27,7 @@ export class GradesListaComponent {
   consultar() {
     this.service.getCursoStudent(this.studentNome, this.cursoNome).subscribe(response =>{ this.Lista = response;
       if(this.Lista.length <= 0){
-  this.message = "Nenhum registro encontrado.";
+  this.message = "Register not found.";
       }else{
         this.message = null;
       }

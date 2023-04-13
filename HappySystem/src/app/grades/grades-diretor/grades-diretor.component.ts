@@ -38,7 +38,7 @@ export class GradesDiretorComponent {
   deletarGrade(){
     this.service
     .deletar(this.studentId, this.courseId)
-    .subscribe( response => this.mensagemSucesso = 'Nota deletada com sucesso',
-    erro => this.mensagemErro = 'Erro ao deletar nota')
+    .subscribe( response => this.mensagemSucesso = 'Grade deleted with success',
+    erro => this.mensagemErro = 'Error when trying to delete')
 }
 }

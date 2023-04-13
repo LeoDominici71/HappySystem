@@ -35,10 +35,10 @@ export class DiretorListaComponent {
     this.service
     .deletar(this.diretorSelecionado)
     .subscribe( response => {
-      this.mensagemSucesso = 'Professor(a) deletado(a) com sucesso!'
+      this.mensagemSucesso = 'Professor deleted with success!'
       this.ngOnInit();
     },
-                erro => this.mensagemErro = 'Ocorreu um erro ao deletar o Professor')
+                erro => this.mensagemErro = 'Error when trying to delete professor')
   }
 
 

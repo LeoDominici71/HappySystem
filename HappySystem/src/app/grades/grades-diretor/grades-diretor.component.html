@@ -1,6 +1,6 @@
 <h1 class="mt-4" style="color: #183356;">Professor</h1>
 <ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active" style="color: #183356;">Consulta Nota</li>
+    <li class="breadcrumb-item active" style="color: #183356;">Search Grade</li>
 </ol>
 <div class="container">
     <div class="row">
@@ -16,11 +16,11 @@
     <form>
         <div class="row">
             <div class="col-md-6">
-                <label for="inputstudentId"> Matricula do Estudante: </label>
+                <label for="inputstudentId"> Student Matricula: </label>
                 <input type="text" [(ngModel)]="studentId" name="studentId" class="form-control" id="inputstudentId">
             </div>
             <div class="col-md-6">
-                <label for="inputcourseId"> Id do Curso: </label>
+                <label for="inputcourseId"> Course Id: </label>
                 <input type="text" [(ngModel)]="courseId" name="courseId" class="form-control" id="inputcourseId">
             </div>
         </div>
@@ -28,11 +28,11 @@
         <div class="row">
             <div class="col-md-3">
                 <button type="button" class="btn btn-danger" (click)="deletarGrade()" >
-                    <i class="fa fa-trash"></i> Deletar
+                    <i class="fa fa-trash"></i> Delete
                 </button>
 
                 <button type="button" class="btn btn-danger" (click)="voltarParaListagem()" style="margin-left: 10px;">
-                    <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+                    <i class="fa fa-arrow-alt-circle-left"></i> Back
                 </button>
             </div>
             <div class="alert alert-warning" role="alert" *ngIf="message">

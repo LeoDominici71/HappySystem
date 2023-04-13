@@ -36,7 +36,7 @@ export class CursosProfComponent {
 this.cursoService.getNome(this.nome)
 .subscribe(response => {this.lista = response;
 if(this.lista.length <= 0){
-this.message = "Nenhum registro encontrado.";
+this.message = "Register not found.";
 }else{
   this.message = null;
 }

@@ -37,7 +37,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>Nome: *</label>
+                    <label>Name: *</label>
                     <input type="text"  [(ngModel)]="student.nome" name="nome" class="form-control" />
 
                 </div>
@@ -47,17 +47,17 @@
         <div class="row">
             <div class="col-md-2">
                 <button type="submit" class="btn btn-success" *ngIf="!student.matricula">
-                    <i class="fa fa-save"></i> Salvar
+                    <i class="fa fa-save"></i> Save
                 </button>
             </div>
             <div class="col-md-2">
                 <button type="submit" class="btn btn-primary" *ngIf="student.matricula">
-                    <i class="fa fa-sync-alt"></i> Atualizar
+                    <i class="fa fa-sync-alt"></i> Update
                 </button>
             </div>
             <div class="col-md-2">
                 <button type="button" class="btn btn-danger" (click)="voltarParaListagem()">
-                    <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+                    <i class="fa fa-arrow-alt-circle-left"></i> Back
                 </button>
             </div>
         </div>
